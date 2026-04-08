@@ -1,15 +1,411 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Sitio en GitHub Pages</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Roberto Valverde Naranjo | Software Architect</title>
+    <meta name="description"
+        content="Portafolio Profesional de Jose Roberto Valverde Naranjo - Software Architect, Technical Lead y Senior Backend Engineer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<h1>¡Hola desde GitHub Pages!</h1>
-<p>Este es mi primer sitio web publicado.</p>
-<img src="imagen.png" alt="Imagen de ejemplo">
-<script src="script.js"></script>
+
+<body class="bg-dark text-light">
+
+    <!-- Background Elements -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">JRV<span>.</span></a>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#about">Perfil</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#education">Educación</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text fade-in-up">
+                    <p class="greeting">Hola, soy</p>
+                    <h1 class="name">Jose R. Valverde</h1>
+                    <h2 class="title" id="typewriter">
+                        <span class="type-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="description">
+                        Ingeniero en Sistemas Computacionales | Especialista en soluciones tecnológicas robustas y
+                        escalables con más de 15 años de experiencia.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#experience" class="btn btn-primary">Ver Experiencia</a>
+                        <a href="https://linkedin.com/in/jose-roberto-valverde-naranjo-6b0127134" target="_blank"
+                            class="btn btn-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:jrvalverden@hotmail.com" class="btn btn-icon"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in-up delay-1">
+                    <div class="image-wrapper">
+                        <!-- Placeholder for Profile Picture -->
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <h2>Sobre Mi <span>Perfil</span></h2>
+                </div>
+                <div class="about-content fade-in-up delay-1">
+                    <div class="about-text glass-card">
+                        <p>
+                            Soy un <strong>Ingeniero en Sistemas Computacionales</strong> con más de quince años de
+                            experiencia en desarrollo de software y arquitectura técnica. He liderado equipos y
+                            proyectos enfocados en transformación digital y mejora continua.
+                        </p>
+                        <p>
+                            Mi especialidad radica en <strong>definir soluciones tecnológicas robustas y
+                                escalables</strong>, aplicando buenas prácticas de desarrollo y resolviendo problemas
+                            complejos de manera eficaz. Siempre enfoco mis aportes en alinear la tecnología con los
+                            objetivos estratégicos del negocio.
+                        </p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="label">Ubicación</span>
+                                    <span>Guayaquil, Ecuador</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="label">Email</span>
+                                    <span>jrvalverden@hotmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="label">Teléfono</span>
+                                    <span>+593 993154323</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <h2>Mi <span>Experiencia</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- FARMCORP 2 -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">marzo 2025 – presente</span>
+                            <h3>Arquitecto de Desarrollo</h3>
+                            <h4>FARMCORP S.A. | Guayaquil</h4>
+                            <ul>
+                                <li>Análisis, Desarrollo e Implementación del eCommerce.</li>
+                                <li>Definición de la arquitectura de software para el ERP de la empresa.</li>
+                                <li>Análisis, Desarrollo e Implementación de Data Warehouse.</li>
+                                <li>Soporte y mantenimiento de la plataforma Pronos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FARMCORP 1 -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">septiembre 2024 – febrero 2025</span>
+                            <h3>Líder de Desarrollo</h3>
+                            <h4>FARMCORP S.A. | Guayaquil</h4>
+                            <ul>
+                                <li>Análisis, Desarrollo e Implementación del eCommerce.</li>
+                                <li>Definición inicial de la arquitectura de software para el ERP.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- DIFARE -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">septiembre 2015 – agosto 2024</span>
+                            <h3>Analista Desarrollador Senior</h3>
+                            <h4>DIFARE S.A. | Guayaquil</h4>
+                            <ul>
+                                <li>Desarrollo e implementación de soluciones comerciales estratégicas.</li>
+                                <li>Mejoras continuas al ERP Neptuno mediante microservicios y contenedores Docker.</li>
+                                <li>Administración del control de versiones con Team Foundation Server / Azure DevOps.
+                                </li>
+                                <li>Definición de la arquitectura de software para el ERP de la empresa.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- MAINT -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">marzo 2014 – agosto 2015</span>
+                            <h3>Ingeniero de Servicios</h3>
+                            <h4>MAINT S.A. | Guayaquil</h4>
+                            <ul>
+                                <li>Diseño y desarrollo del sistema de proveeduría para el Banco Pacifico.</li>
+                                <li>Implementación del sistema del Kiosco para el Banco Guayaquil.</li>
+                                <li>Implementación de nuevas versiones del sistema del Registro Civil de Guayaquil con
+                                    NEC (Argentina).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- DIRES -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">septiembre 2008 – febrero 2014</span>
+                            <h3>Analista Desarrollador Senior</h3>
+                            <h4>DIRES S.A. | Guayaquil</h4>
+                            <ul>
+                                <li>Migración e implementación de sistemas regionales, incluyendo el proyeto "Albis
+                                    S.A." (Perú).</li>
+                                <li>Desarrollos regulatorios SRI e integraciones. Proyecto destacado con ISSFA.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- SOLSA -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">junio 2005 – agosto 2008</span>
+                            <h3>Asesor Tecnológico</h3>
+                            <h4>SOLSA S.A. | Guayaquil</h4>
+                            <ul>
+                                <li>Desarrollo, análisis e implementación del software GALEON.</li>
+                                <li>Desarrollo un sistema orientado a farmacias FARMASOFT.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BANCO AMAZONAS -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="date">mayo 2003 – julio 2003</span>
+                            <h3>Programador Junior (Pasante)</h3>
+                            <h4>Banco Amazonas | Guayaquil</h4>
+                            <ul>
+                                <li>Mantenimiento al sistema COBIS desarrollado por MACOSA en Ecuador.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ESCUELA FISCAL MIXTA SIMON BOLIVAR -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Profesor de Computación</h3>
+                            <h4>Escuela Fiscal Mixta Simón Bolívar | Guayaquil</h4>
+                        </div>
+                    </div>
+
+                    <!-- ESCUELA PARTICULAR MONTREAL -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Profesor de Computación</h3>
+                            <h4>Escuela Particular Montreal | Guayaquil</h4>
+                        </div>
+                    </div>
+
+                    <!-- JUNTA DE BENEFICENCIA -->
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Asistente de Analista de Personal (Pasante de Bachillerato)</h3>
+                            <h4>Honorable Junta de Beneficencia de Guayaquil | Guayaquil</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <h2>Tecnologías & <span>Habilidades</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category glass-card fade-in-up">
+                        <h3><i class="fas fa-server"></i> Backend & APIs</h3>
+                        <div class="tags">
+                            <span>API REST</span><span>.NET Core</span><span>Java</span>
+                            <span>Node.js</span><span>Go</span><span>Python</span>
+                            <span>Windows Workflow Foundation</span><span>SOAP (WCF)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in-up delay-1">
+                        <h3><i class="fas fa-database"></i> Base de Datos & ORMs</h3>
+                        <div class="tags">
+                            <span>SQL Server</span><span>MySQL</span><span>PostgreSQL</span>
+                            <span>Oracle</span><span>Entity Framework</span><span>TypeORM</span>
+                            <span>Dapper</span><span>Doctrine</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in-up delay-2">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <div class="tags">
+                            <span>React.js</span><span>AngularJS</span><span>HTML5/CSS3</span>
+                            <span>JavaScript</span><span>C# / VB.NET</span><span>Java FX</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in-up">
+                        <h3><i class="fas fa-box-open"></i> DevOps & Entornos</h3>
+                        <div class="tags">
+                            <span>Docker</span><span>Kubernetes</span><span>Podman</span>
+                            <span>Git/GitHub/GitLab</span><span>Jenkins</span><span>Azure DevOps</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in-up delay-1">
+                        <h3><i class="fas fa-chart-bar"></i> Reportes & BI</h3>
+                        <div class="tags">
+                            <span>Crystal Reports</span><span>Reporting Services</span>
+                            <span>SSIS</span><span>Pentaho</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in-up delay-2">
+                        <h3><i class="fas fa-user-check"></i> Competencias</h3>
+                        <div class="tags">
+                            <span>Arquitectura</span><span>Liderazgo</span>
+                            <span>Resolución de Problemas</span><span>Trabajo en equipo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <div class="section-title fade-in-up">
+                    <h2>Formación <span>Académica</span></h2>
+                </div>
+
+                <div class="edu-grid">
+                    <div class="edu-card glass-card fade-in-up">
+                        <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="date">oct 2025 – presente</span>
+                        <h3>Master Universitario en Dirección y Gestión de Tecnologías</h3>
+                        <h4>Universidad Internacional de La Rioja</h4>
+                        <p>Diseño y dirección de proyectos tecnológicos complejos y su integración en entornos
+                            corporativos.</p>
+                    </div>
+
+                    <div class="edu-card glass-card fade-in-up delay-1">
+                        <div class="icon"><i class="fas fa-university"></i></div>
+                        <span class="date">mar 2003 – ago 2008</span>
+                        <h3>Ingeniero en Sistemas Computacionales</h3>
+                        <h4>Universidad Estatal de Guayaquil</h4>
+                        <p>Facultad de Ciencias Físicas y Matemáticas.</p>
+                    </div>
+
+                    <div class="edu-card glass-card fade-in-up delay-2">
+                        <div class="icon"><i class="fas fa-school"></i></div>
+                        <span class="date">enero 1996 – enero 2002</span>
+                        <h3>Bachiller en Comercio y Administración</h3>
+                        <h4>Colegio Fiscal Experimental Vicente Rocafuerte</h4>
+                        <p>Especialización Informática “Auxiliar en programación”.</p>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications fade-in-up">
+                    <h3 class="sub-title"><i class="fas fa-certificate"></i> Certificaciones & Cursos</h3>
+                    <ul class="cert-list">
+                        <li>Soft Skills: Liderazgo, Comunicación y Resolución de Conflictos</li>
+                        <li>Microsoft ® Certified Solutions Expert</li>
+                        <li>Microsoft ® Certified Solutions Associate</li>
+                        <li>Microsoft ® Certified Professional</li>
+                        <li>Curso 10263A - Developing Windows Communica on Foundation Solutions with Microsoft Visual
+                            Studio 2010.</li>
+                        <li>Curso de Microsoft Visual Studio .Net 2008 (Nivel Intermedio) y SQL Server 2008 (Nivel
+                            Avanzado).</li>
+                        <li>Descubriendo SAP S/4 Hana – Introducción ABAP</li>
+                        <li>Taller SOA Design & Architecture Lab</li>
+                        <li>Fundación Educativa FEDIFARE - Curso Compromiso con el Cliente</li>
+                        <li>Fundación Educativa FEDIFARE - Curso Express “La Asertividad en la Atención y Servicio al
+                            Cliente”</li>
+                        <li>Fundación Educativa FEDIFARE - Curso Express “Como manejar el estrés laboral”</li>
+                        <li>Fundación Educativa FEDIFARE - Curso Express “Negociación Efectiva”</li>
+                        <li>Fundación Educativa FEDIFARE - Curso Express “Branding Personal”</li>
+                        <li>Fundación Educativa FEDIFARE - Curso Express “Comunicación efectiva”</li>
+                    </ul>
+
+                    <ul class="cert-list">
+
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="social-links mb-4">
+                <a href="https://linkedin.com/in/jose-roberto-valverde-naranjo-6b0127134" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:jrvalverden@hotmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Jose Roberto Valverde Naranjo. Construyendo soluciones escalables.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
